@@ -4,7 +4,7 @@ export default class NewsItem extends Component {
   render() {
     let { title, description, imageUrl, newsUrl, author, date } = this.props;
     return (
-      <div>
+      <div className="d-flex justify-content-center">
         
         <div className="card" style={{ width: "600px", margin: "20px" }}>
           <img

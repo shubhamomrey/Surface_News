@@ -4,6 +4,7 @@ import Nabvar from "./components/Nabvar";
 import News from "./components/News";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+
 export class App extends Component {
   pageSize = 10;
   render() {
@@ -11,6 +12,7 @@ export class App extends Component {
       <Router>
         <Nabvar />
         <Routes>
+          
           <Route
             path="/"
             element={
