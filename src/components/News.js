@@ -19,6 +19,7 @@ export default class News extends Component {
   capitalizeFirstLetter = (s)=> {
     return s.charAt(0).toUpperCase() + s.slice(1);
   }
+<<<<<<< HEAD
 constructor(props) {
     super(props);
     this.state = {
@@ -41,6 +42,8 @@ constructor(props) {
       loading: false,
     });
   }
+=======
+>>>>>>> 5cc45da7238c9da247b810900e23b70dd6ddc3df
 
   async componentDidMount() {
     this.updateNews()
