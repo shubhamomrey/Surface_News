@@ -24,19 +24,6 @@ export default class News extends Component {
     };
   }
 
-  async updateNews() {
-    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.countary}&category=${this.props.category}&apiKey=50005cf4d4b140ec91ebc96cf053c398&page=${this.state.page}&pageSize=${this.props.pageSize}`;
-    this.setState({ loading: true });
-    let data = await fetch(url);
-    let parsedData = await data.json();
-    console.log(parsedData);
-    this.setState({
-      articles: parsedData.articles,
-      totalResults: parsedData.totalResults,
-      loading: false,
-    });
-  }
-
   async componentDidMount() {
     let url = `https://newsapi.org/v2/top-headlines?country=${this.props.countary}&category=${this.props.category}&apiKey=50005cf4d4b140ec91ebc96cf053c398&page=1&pageSize=${this.props.pageSize}`;
     this.setState({ loading: true });
