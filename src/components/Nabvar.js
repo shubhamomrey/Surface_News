@@ -29,14 +29,14 @@ export default class Nabvar extends Component {
                
                 <li className="nav-item">
                   <Link className="nav-link" to="/">
-                    {" "}
+                 
                     General
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/business">
                     {" "}
-                    Business{" "}
+                    Business
                   </Link>
                 </li>
                 <li className="nav-item">

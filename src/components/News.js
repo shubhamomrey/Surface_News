@@ -7,7 +7,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 export default class News extends Component {
   static defaultProps = {
     countary: "in",
-    pageSize: 5,
+    pageSize: 7,
     category: "ganeral",
   };
   static propTypes = {
@@ -67,7 +67,7 @@ export default class News extends Component {
   render() {
     return (
       <>
-        <h1 className="d-flex justify-content-center">Surface News</h1>
+        <h1 className="d-flex justify-content-center ">Surface News</h1>
         <h3 className="mx-4">
           Top stories from {this.capitalizeFirstLetter(this.props.category)}
         </h3>
@@ -79,7 +79,7 @@ export default class News extends Component {
           hasMore={this.state.articles.length !== this.state.totalResults}
           loader={<Spinner />}
         >
-          <div className="container">
+          <div className="container ">
             <div className="row">
               {this.state.articles.map((element) => {
                 return <div key={element.url}>

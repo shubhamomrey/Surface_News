@@ -6,7 +6,7 @@ export default class NewsItem extends Component {
     return (
       <div className="d-flex justify-content-center">
         
-        <div className="card" style={{ width: "600px", margin: "20px" }}>
+        <div className="card" style={{ width: "600px", margin: "21px" }}>
           <img
             src={
               imageUrl
