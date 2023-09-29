@@ -55,7 +55,11 @@ export default class News extends Component {
 
   fetchMoreData = async () => {
     this.setState({ page: this.state.page + 1 });
-    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.countary}&category=${this.props.category}&apiKey=${this.props.apikey}&page=${this.state.page + 1}&pageSize=${this.props.pageSize}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=${
+      this.props.countary
+    }&category=${this.props.category}&apiKey=${this.props.apikey}&page=${
+      this.state.page + 1
+    }&pageSize=${this.props.pageSize}`;
     let data = await fetch(url);
     let parsedData = await data.json();
     this.setState((prevState) => ({
@@ -82,7 +86,8 @@ export default class News extends Component {
           <div className="container ">
             <div className="row">
               {this.state.articles.map((element) => {
-                return <div key={element.url}>
+                return (
+                  <div key={element.url}>
                     <NewsItem
                       title={element.title ? element.title : ""}
                       description={
@@ -95,7 +100,8 @@ export default class News extends Component {
                       author={element.author}
                       date={element.publishedAt}
                     />
-                  </div>                
+                  </div>
+                );
               })}
             </div>
           </div>

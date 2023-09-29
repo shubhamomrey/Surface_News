@@ -26,10 +26,8 @@ export default class Nabvar extends Component {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-               
                 <li className="nav-item">
                   <Link className="nav-link" to="/">
-                 
                     General
                   </Link>
                 </li>
