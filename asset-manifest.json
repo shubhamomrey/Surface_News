@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.073c9b0a.css",
-    "main.js": "/react-gh-pages/static/js/main.1f286c7c.js",
-    "static/js/787.3e1aff49.chunk.js": "/react-gh-pages/static/js/787.3e1aff49.chunk.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.073c9b0a.css.map": "/react-gh-pages/static/css/main.073c9b0a.css.map",
-    "main.1f286c7c.js.map": "/react-gh-pages/static/js/main.1f286c7c.js.map",
-    "787.3e1aff49.chunk.js.map": "/react-gh-pages/static/js/787.3e1aff49.chunk.js.map"
+    "main.css": "/Surface_News/static/css/main.073c9b0a.css",
+    "main.js": "/Surface_News/static/js/main.cb9effbd.js",
+    "static/js/787.3e1aff49.chunk.js": "/Surface_News/static/js/787.3e1aff49.chunk.js",
+    "index.html": "/Surface_News/index.html",
+    "main.073c9b0a.css.map": "/Surface_News/static/css/main.073c9b0a.css.map",
+    "main.cb9effbd.js.map": "/Surface_News/static/js/main.cb9effbd.js.map",
+    "787.3e1aff49.chunk.js.map": "/Surface_News/static/js/787.3e1aff49.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.1f286c7c.js"
+    "static/js/main.cb9effbd.js"
   ]
 }
