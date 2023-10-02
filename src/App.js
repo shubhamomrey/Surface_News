@@ -1,34 +1,28 @@
 import "./App.css";
-import React, { Component } from "react";
+import React, { useState } from "react";
 import Nabvar from "./components/Nabvar";
 import News from "./components/News";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 
-export class App extends Component {
-  pageSize = 11;
-  apikey = process.env.REACT_APP_NEWS_API;
+function App (props) {
+  const [progress, setProgress] = useState(0)
+  const pageSize = 10;
+  const apikey = process.env.REACT_APP_NEWS_API;
 
-  state = {
-    progress: 0,
-  };
-  setProgress = (progress) => {
-    this.setState({ progress: progress });
-  };
-  render() {
     return (
       <Router>
         <Nabvar />
-        <LoadingBar color="#f11946" height={3} progress={this.state.progress} />
+        <LoadingBar color="#f11946" height={3} progress={progress} />
 
         <Routes>
           <Route
             path="/"
             element={
               <News
-                setProgress={this.setProgress}
-                apikey={this.apikey}
-                pageSize={this.pageSize}
+                setProgress={setProgress}
+                apikey={apikey}
+                pageSize={pageSize}
                 key="general"
                 countary="in"
                 category="general"
@@ -39,9 +33,9 @@ export class App extends Component {
             path="/business"
             element={
               <News
-                setProgress={this.setProgress}
-                apikey={this.apikey}
-                pageSize={this.pageSize}
+                setProgress={setProgress}
+                apikey={apikey}
+                pageSize={pageSize}
                 key="business"
                 countary="in"
                 category="business"
@@ -52,9 +46,9 @@ export class App extends Component {
             path="/entertainment"
             element={
               <News
-                setProgress={this.setProgress}
-                apikey={this.apikey}
-                pageSize={this.pageSize}
+                setProgress={setProgress}
+                apikey={apikey}
+                pageSize={pageSize}
                 key="entertainment"
                 countary="in"
                 category="entertainment"
@@ -65,9 +59,9 @@ export class App extends Component {
             path="/health"
             element={
               <News
-                setProgress={this.setProgress}
-                apikey={this.apikey}
-                pageSize={this.pageSize}
+                setProgress={setProgress}
+                apikey={apikey}
+                pageSize={pageSize}
                 key="health"
                 countary="in"
                 category="health"
@@ -78,9 +72,9 @@ export class App extends Component {
             path="/sport"
             element={
               <News
-                setProgress={this.setProgress}
-                apikey={this.apikey}
-                pageSize={this.pageSize}
+                setProgress={setProgress}
+                apikey={apikey}
+                pageSize={pageSize}
                 key="sport"
                 countary="in"
                 category="sport"
@@ -91,9 +85,9 @@ export class App extends Component {
             path="/science"
             element={
               <News
-                setProgress={this.setProgress}
-                apikey={this.apikey}
-                pageSize={this.pageSize}
+                setProgress={setProgress}
+                apikey={apikey}
+                pageSize={pageSize}
                 key="science"
                 countary="in"
                 category="science"
@@ -104,9 +98,9 @@ export class App extends Component {
             path="/technology"
             element={
               <News
-                setProgress={this.setProgress}
-                apikey={this.apikey}
-                pageSize={this.pageSize}
+                setProgress={setProgress}
+                apikey={apikey}
+                pageSize={pageSize}
                 key="technology"
                 countary="in"
                 category="technology"
@@ -116,7 +110,8 @@ export class App extends Component {
         </Routes>
       </Router>
     );
-  }
+
 }
 
 export default App;
+
