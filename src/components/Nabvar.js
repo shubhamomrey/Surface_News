@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
-export default class Nabvar extends Component {
-  render() {
+function Nabvar () {
+ 
     return (
       <div>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
           <div className="container-fluid">
             <Link className="navbar-brand" to="/">
               Surface News
@@ -83,6 +83,7 @@ export default class Nabvar extends Component {
           </div>
         </nav>
       </div>
-    );
-  }
+
+    )
 }
+export default Nabvar
